@@ -51,7 +51,7 @@ resource "aws_instance" "Ansibleserver" {
 
 terraform {
   backend "s3" {
-    bucket = "gitmybucket"
+    bucket = "emmans3bucket1"
     key = "/"
     region = "us-east-1"
   }
