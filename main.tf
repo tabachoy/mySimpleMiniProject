@@ -47,5 +47,12 @@ resource "aws_instance" "Ansibleserver" {
     sudo yum install pip -y
     sudo python3 -m pip install --user ansible
     EOF
+}
 
+terraform {
+  backend "s3" {
+    bucket = "gitmybucket"
+    key = "/"
+    region = "us-east-1"
+  }
 }
