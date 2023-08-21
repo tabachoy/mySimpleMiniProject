@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-resource "aws_instance" "web_server" {
+resource "aws_instance" "web_server1" {
   ami           = "ami-0f34c5ae932e6f0e4" # Amazon Linux 2 LTS
   instance_type = "t2.micro"
   #key_name      = "emmanuelKeyPair2" # for SSH connection with an existing keypair
